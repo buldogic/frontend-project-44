@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import userGreeting from '../src/cli.js';
 
@@ -30,7 +32,7 @@ const firstGamesEven = () => {
     }
   }
 
-  return  console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}`);
 };
 
 firstGamesEven();
