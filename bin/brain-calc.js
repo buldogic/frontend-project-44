@@ -4,9 +4,9 @@
 // import userGreeting from "../src/cli.js";
 // import readlineSync from 'readline-sync';
 
-import { gamesCalc } from "../src/index.js";
+import gameCalc from "../src/games/games-calc.js";
 
-gamesCalc()
+gameCalc()
 
 
 // const name = userGreeting();

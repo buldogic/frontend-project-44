@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 
 // import readlineSync from 'readline-sync';
-import { firstGamesEven } from '../src/index.js';
+// import { firstGamesEven } from '../src/index.js';
 // import userGreeting from '../src/cli.js';
 // import { numberRandom } from '../src/index.js';
 
+import evenGames from "../src/games/games-even.js";
 
-firstGamesEven();
+// import basisGame from "../src/index.js";
+
+evenGames()
 
 // const name = userGreeting();
 
