@@ -11,10 +11,10 @@ const playGameProgression = () => {
   const numIndex = arr.indexOf(randomNumProg);
 
   if (numIndex !== -1) {
-    arr.splice(numIndex, 1, "...");
+    arr.splice(numIndex, 1, "..");
   }
 
-  const questions = arr.join(", ");
+  const questions = arr.join(" ");
   const answerProgression = String(randomNumProg);
 
   return [`${questions}`, answerProgression];
