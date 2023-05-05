@@ -8,7 +8,7 @@ const playEvenGame = () => {
 };
 
 const evenGames = () => {
-  const textStartGame = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+  const textStartGame = 'Answer "yes" if the number is even, otherwise answer "no".';
   basisGame(textStartGame, playEvenGame);
 };
 export default evenGames;

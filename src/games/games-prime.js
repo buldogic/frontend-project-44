@@ -10,7 +10,7 @@ const playGamePrime = () => {
 };
 
 const gamePrime = () => {
-  const textStartGame = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+  const textStartGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   basisGame(textStartGame, playGamePrime);
 };
