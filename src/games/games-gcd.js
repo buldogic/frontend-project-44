@@ -5,7 +5,7 @@ import { numberRandom } from "../utils.js";
 const playGameGcd = () => {
   const firstNumber = numberRandom(1, 50);
   const secondNumber = numberRandom(1, 99);
-  const question = `${firstNumber} , ${secondNumber}`;
+  const question = `${firstNumber} ${secondNumber}`;
   const gcd = gcsNum(firstNumber, secondNumber);
   return [question, `${gcd}`];
 };
