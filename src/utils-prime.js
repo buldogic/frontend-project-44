@@ -1,4 +1,4 @@
-export const testPrime = (n) => {
+const testPrime = (n) => {
   if (n === 1) {
     return false;
   }
@@ -12,3 +12,5 @@ export const testPrime = (n) => {
   }
   return true;
 };
+
+export default testPrime;

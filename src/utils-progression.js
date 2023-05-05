@@ -1,7 +1,7 @@
 const startProgression = 1;
 const stepProgression = 2;
 
-export const progressionArr = (firstnum, secondnum) => {
+const progressionArr = (firstnum, secondnum) => {
   const arrProgression = [];
   for (
     let i = Math.min(firstnum, secondnum);
@@ -17,3 +17,5 @@ export const progressionArr = (firstnum, secondnum) => {
 
   return arrProgression;
 };
+
+export default progressionArr;

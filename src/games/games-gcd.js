@@ -1,6 +1,6 @@
-import basisGame from "../index.js";
-import { gcsNum } from "../utils-gcd.js";
-import { numberRandom } from "../utils.js";
+import basisGame from '../index.js';
+import gcsNum from '../utils-gcd.js';
+import numberRandom from '../utils.js';
 
 const playGameGcd = () => {
   const firstNumber = numberRandom(1, 50);
@@ -11,7 +11,7 @@ const playGameGcd = () => {
 };
 
 const gameGcd = () => {
-  const textStartGame = "Find the greatest common divisor of given numbers.";
+  const textStartGame = 'Find the greatest common divisor of given numbers.';
   basisGame(textStartGame, playGameGcd);
 };
 

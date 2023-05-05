@@ -1,12 +1,13 @@
-export const gcsNum = (firstNum, secondNum) => {
-  if (typeof firstNum !== "number" || typeof secondNum !== "number")
-    return false;
-  firstNum = Math.abs(firstNum);
-  secondNum = Math.abs(secondNum);
-  while (secondNum) {
-    const number = secondNum;
-    secondNum = firstNum % secondNum;
-    firstNum = number;
+const gcsNum = (firstNum, secondNum) => {
+  if (typeof firstNum !== 'number' || typeof secondNum !== 'number') return false;
+  let first = Math.abs(firstNum);
+  let second = Math.abs(secondNum);
+  while (second) {
+    const number = second;
+    second = first % second;
+    first = number;
   }
-  return firstNum;
+  return first;
 };
+
+export default gcsNum;

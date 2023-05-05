@@ -1,9 +1,9 @@
-import basisGame from "../index.js";
-import { numberRandom } from "../utils.js";
+import basisGame from '../index.js';
+import numberRandom from '../utils.js';
 
 const playEvenGame = () => {
   const number = numberRandom(1, 99);
-  const rightAnswer = number % 2 === 0 ? "yes" : "no";
+  const rightAnswer = number % 2 === 0 ? 'yes' : 'no';
   return [`${number}`, rightAnswer];
 };
 
