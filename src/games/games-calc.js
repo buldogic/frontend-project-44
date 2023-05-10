@@ -20,7 +20,7 @@ const arrOperator = ['+', '-', '*'];
 const playGameCalc = () => {
   const firstNumber = numberRandom(1, 10);
   const secondNumber = numberRandom(1, 10);
-  const operator = randomOperator(arrOperator);
+  const operator = arrOperator[randomOperator(arrOperator)];
   const question = `${firstNumber} ${operator} ${secondNumber}`;
   const rightAnswer = calculateExpression(firstNumber, secondNumber, operator);
   return [question, `${rightAnswer}`];

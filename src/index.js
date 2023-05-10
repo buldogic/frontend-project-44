@@ -1,14 +1,20 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import userGreeting from './cli.js';
+
+const userGreeting = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
+};
 
 const basisGame = (text, nameFuncGame) => {
   const name = userGreeting();
 
   console.log(text);
 
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const [question, answerUser] = nameFuncGame();
     console.log(`Question: ${question}`);
     const answerQuestion = readlineSync.question('Your answer: ');
