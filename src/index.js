@@ -14,7 +14,9 @@ const basisGame = (text, nameFuncGame) => {
 
   console.log(text);
 
-  for (let i = 0; i < 3; i += 1) {
+  const roundsCount = 3;
+
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, answerUser] = nameFuncGame();
     console.log(`Question: ${question}`);
     const answerQuestion = readlineSync.question('Your answer: ');
