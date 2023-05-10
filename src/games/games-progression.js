@@ -1,6 +1,6 @@
-import basisGame from "../index.js";
-import randomOperator from "../randomOperator.js";
-import numberRandom from "../utils.js";
+import basisGame from '../index.js';
+import randomOperator from '../randomOperator.js';
+import numberRandom from '../utils.js';
 
 const startProgression = 1;
 const stepProgression = 2;
@@ -27,22 +27,22 @@ const playGameProgression = () => {
   const secondNum = numberRandom(60, 99);
   const arr = progressionArr(firstNum, secondNum);
   // const index = Math.floor(Math.random() * arr.length);
-  const index = randomOperator(arr)
+  const index = randomOperator(arr);
   const randomNumProg = arr[index];
   const numIndex = arr.indexOf(randomNumProg);
 
   if (numIndex !== -1) {
-    arr.splice(numIndex, 1, "..");
+    arr.splice(numIndex, 1, '..');
   }
 
-  const questions = arr.join(" ");
+  const questions = arr.join(' ');
   const answerProgression = String(randomNumProg);
 
   return [`${questions}`, answerProgression];
 };
 
 const gameProgression = () => {
-  const textStartGame = "What number is missing in the progression?";
+  const textStartGame = 'What number is missing in the progression?';
   basisGame(textStartGame, playGameProgression);
 };
 
