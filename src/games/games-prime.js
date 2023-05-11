@@ -1,7 +1,7 @@
 import basisGame from '../index.js';
 import numberRandom from '../utils.js';
 
-const testPrime = (n) => {
+const isTestPrime = (n) => {
   if (n === 1) {
     return false;
   }
@@ -19,8 +19,8 @@ const testPrime = (n) => {
 const playGamePrime = () => {
   const number = numberRandom(1, 50);
   const question = number;
-  const answerUser = testPrime(number) ? 'yes' : 'no';
-  return [`${question}`, answerUser];
+  const rightAnswer = isTestPrime(number) ? 'yes' : 'no';
+  return [`${question}`, rightAnswer];
 };
 
 const gamePrime = () => {

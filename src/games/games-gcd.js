@@ -1,7 +1,7 @@
 import basisGame from '../index.js';
 import numberRandom from '../utils.js';
 
-const gcsNum = (firstNum, secondNum) => {
+const gcdNum = (firstNum, secondNum) => {
   if (typeof firstNum !== 'number' || typeof secondNum !== 'number') return false;
   let first = Math.abs(firstNum);
   let second = Math.abs(secondNum);
@@ -17,8 +17,8 @@ const playGameGcd = () => {
   const firstNumber = numberRandom(1, 50);
   const secondNumber = numberRandom(1, 99);
   const question = `${firstNumber} ${secondNumber}`;
-  const gcd = gcsNum(firstNumber, secondNumber);
-  return [question, `${gcd}`];
+  const rightAnswer = gcdNum(firstNumber, secondNumber);
+  return [question, `${rightAnswer}`];
 };
 
 const gameGcd = () => {
